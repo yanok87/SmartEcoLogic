@@ -120,17 +120,10 @@ header {
 
 /* HOW_SECTION & PROCEDURE*/
 
-/* .bg_container {
-  background: url(../images/how_bg.png) no-repeat;
-  background-position: 100% 50%;
-  z-index: 2;
-} */
-
 .how_section {
   height: 1164px;
   margin-bottom: 65px;
-  /* background: url(../images/how_bg.png) no-repeat;
-  background-position: 100% 0; */
+  position: relative;
 }
 
 .how_container {
@@ -215,17 +208,16 @@ header {
   font-size: 20px;
 }
 
-/* .procedure_time::after {
+.how_section::before {
   content: "";
-  display: block;
-  width: 600px;
-  height: 100%;
-  background: url(../images/how_bg.png) no-repeat;
-  background-size: contain;
   position: absolute;
-  top: 100%;
-  right: -10%;
-} */
+  top: -18%;
+  right: 0;
+  width: 40%;
+  height: 75%;
+  background: url(../images/how_bg.png) no-repeat;
+  background-size: cover;
+}
 
 .how_container .button,
 .economy_container .button {
@@ -336,19 +328,52 @@ header {
 /* STEPS SECTION */
 
 .steps {
-  background: #ebfdf6;
+  background: url(../images/steps_hand_bg.png) #ebfdf6 no-repeat;
+  background-position: -7% 20%;
+  position: relative;
 }
 
 .steps h3 {
+  margin-bottom: 130px;
   padding-top: 60px;
+}
+
+.steps_list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
 }
 
 .steps_list_item {
   display: flex;
 }
 
-.steps_list_item .one {
-  /* margin-left: 100px; */
+.one {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  margin-bottom: 60px;
+}
+
+.two {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  margin-bottom: 40px;
+}
+
+.three {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  margin-bottom: 80px;
+}
+
+.four {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  margin-bottom: 90px;
 }
 
 .step_number {
@@ -359,6 +384,22 @@ header {
   margin-right: 30px;
 }
 
+.one > .step_number {
+  color: #52b080;
+}
+
+.two > .step_number {
+  color: #3aa77a;
+}
+
+.three > .step_number {
+  color: #199a71;
+}
+
+.four > .step_number {
+  color: #00916a;
+}
+
 .step_description {
   margin: 60px 0 0 0;
 }
@@ -367,6 +408,10 @@ header {
   font-size: 38px;
   font-weight: 500;
   margin-bottom: 36px;
+}
+
+.four .step_name {
+  color: #00916a;
 }
 
 .step_text,
@@ -387,4 +432,167 @@ header {
   color: #000;
   font-size: 38px;
   padding: 20px 0;
+}
+
+.steps::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -15%;
+  width: 40%;
+  height: 50%;
+  background: url(../images/steps_certificate_bg.png) no-repeat;
+  background-size: cover;
+  background-position-x: -3%;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  padding: 100px 0;
+}
+
+.about_text {
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+
+.about_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_list_item {
+  width: 50%;
+  font-size: 22px;
+  position: relative;
+}
+
+.certificate,
+.worker {
+  margin-bottom: 80px;
+}
+
+.certificate::before,
+.worker::before,
+.iso::before,
+.code::before {
+  content: "";
+  display: block;
+  /* position: absolute; */
+  width: 145px;
+  height: 145px;
+  background: url(../images/about_certificate_icon.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 5px;
+}
+
+.worker::before {
+  background: url(../images/about_worker_icon.png) no-repeat;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+.iso::before {
+  background: url(../images/about_iso_icon.png) no-repeat;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+.code::before {
+  background: url(../images/about_code_icon.png) no-repeat;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+/* SECTION PRICE */
+
+.price {
+  background-color: #fbfae8;
+  padding: 80px 0;
+}
+
+.price_list {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.price_list_item {
+  width: 33.33%;
+}
+
+.price_category {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+
+.price_sum {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.price_sum.first {
+  color: #52b080;
+}
+
+.price_sum.second {
+  color: #2aa175;
+}
+
+.price_sum.third {
+  color: #00916a;
+}
+
+.price_container > .button {
+  margin: 0 auto;
+  display: block;
+}
+
+/* FAQ SECTION */
+
+.faq {
+  padding: 90px 0;
+  position: relative;
+}
+
+.faq::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  height: 70%;
+  background: url(../images/faq_bg.png) no-repeat;
+  background-size: contain;
+}
+
+.faq_list {
+  width: 60%;
+}
+
+.question {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 1px solid #53b080;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.answer {
+  font-size: 20px;
+  margin-bottom: 60px;
+  display: none;
+}
+
+.answer.show {
+  display: block;
+}
+
+.question:hover + .answer {
+  display: block;
+  cursor: pointer;
 }
