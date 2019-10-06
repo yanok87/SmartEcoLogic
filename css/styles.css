@@ -121,8 +121,7 @@ header {
 /* HOW_SECTION & PROCEDURE*/
 
 .how_section {
-  height: 1164px;
-  margin-bottom: 65px;
+  padding: 65px 0;
   position: relative;
 }
 
@@ -130,7 +129,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-bottom: 65px;
 }
 
 .procedure {
@@ -546,6 +544,11 @@ header {
   color: #00916a;
 }
 
+.price_description {
+  font-size: 20px;
+  color: rgba(60, 60, 60, 255);
+}
+
 .price_container > .button {
   margin: 0 auto;
   display: block;
@@ -595,4 +598,100 @@ header {
 .question:hover + .answer {
   display: block;
   cursor: pointer;
+}
+
+/* INFO SECTION */
+
+.info {
+  background-color: #00916a;
+}
+
+.info_container {
+  padding: 50px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.info_contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+
+.info_contacts .tel {
+  font-size: 40px;
+  color: #ffdf60;
+  margin-bottom: 20px;
+}
+
+.info_contacts .email {
+  display: inline-block;
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 70px;
+  border-bottom: 1px solid #fff;
+}
+
+.info_contacts .address {
+  font-size: 22px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.info_contacts .address::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/address_icon.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.services_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+
+.serevices_list_item {
+  margin-bottom: 20px;
+}
+
+.serevices_list_item a {
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+/* MAP SECTION */
+
+.map iframe {
+  width: 100%;
+  height: 360px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #00916a;
+  padding: 24px 0;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_footer img {
+  width: 170px;
+}
+
+.copyright {
+  font-size: 18px;
+  color: rgba(186, 248, 223, 255);
 }
