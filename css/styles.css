@@ -566,10 +566,11 @@ header {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 40%;
-  height: 70%;
+  width: 45%;
+  height: 50%;
   background: url(../images/faq_bg.png) no-repeat;
   background-size: contain;
+  background-position-x: right;
 }
 
 .faq_list {
