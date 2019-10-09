@@ -1583,6 +1583,8 @@ footer {
 
   .heading_contacts {
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .heading_tel {
@@ -1592,7 +1594,7 @@ footer {
   }
 
   .button {
-    padding: 20px 30px;
+    padding: 16px 30px;
     font-size: 20px;
   }
 
@@ -1883,18 +1885,20 @@ footer {
   }
 
   .info_contacts {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
 
   .info_contacts .tel {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .info_contacts .email {
     font-size: 20px;
     margin-bottom: 40px;
+    align-self: center;
   }
 
   .info_contacts .address {
