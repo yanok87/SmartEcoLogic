@@ -1567,6 +1567,7 @@ footer {
 
   header {
     height: 100vh;
+    min-height: 500px;
     position: relative;
   }
 
@@ -1631,6 +1632,7 @@ footer {
 
   .how_container {
     display: block;
+    text-align: center;
   }
 
   .how_section::before {
@@ -1641,6 +1643,7 @@ footer {
   .procedure {
     width: 100%;
     margin-bottom: 30px;
+    text-align: left;
   }
 
   .section_title {
@@ -1663,12 +1666,14 @@ footer {
   .procedure_time_minutes,
   .economy_interval_year {
     font-size: 140px;
+    max-width: 60%;
+    margin: 0 auto;
   }
 
   .minutes_text,
   .year_text {
     font-size: 20px;
-    right: 10%;
+    right: 0;
   }
 
   .procedure_condition {
